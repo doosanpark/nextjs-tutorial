@@ -6,7 +6,7 @@ export default function Top(){
 
         <div>
             <Header as="h1">박두산</Header>
-            <Gnb></Gnb>
+            <Gnb/>
         </div>
     )
 }

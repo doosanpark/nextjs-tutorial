@@ -28,9 +28,16 @@ function getData(){
       <Head>
         <title>Home | 박두산천재</title>
       </Head>
-      <Header as='h3' style={{paddingTop:40}}>베스트 상품</Header>
+      <Header as='h3' style={{paddingTop:40}}>
+        베스트 상품
+      </Header>
       <Divider />
-      <ItemList list = {list}></ItemList>
+      <ItemList list = {list.slice(0, 9)}></ItemList>
+      <Header as='h3' style={{paddingTop:40}}>
+        신상품
+      </Header>
+      <Divider />
+      <ItemList list = {list.slice(9)}></ItemList>
     </div>
   )
 }
